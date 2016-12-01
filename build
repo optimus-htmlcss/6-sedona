@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -rf gosha;
+mkdir gosha;
+rsync -av --exclude '.git*' --exclude '.editorconfig' --exclude '*.md' . gosha/
